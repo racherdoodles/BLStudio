@@ -1,0 +1,157 @@
+html, body { 
+	height: 100%;
+}
+
+body {
+	background-color: silver;
+}
+
+ul {
+	width: 100%;
+}
+
+li {/* This is for navbar width correction */
+	width: 25%;
+	text-align: center;
+}
+
+footer {
+	font-family: Verdana, sans-serif;
+	font-size: x-small;
+	color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.mycontainer {
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+.main {
+	min-height: 0;
+	flex: 1;
+	overflow: auto;
+	margin: 0 10px 0 10px;
+}
+
+.carousel {
+	background-color: silver;
+	background-color: rgba(0, 0, 0, .3);
+	border-radius: 20px;
+}
+
+.carousel-inner {
+	max-width: 460px;
+	max-height: 460px;
+	object-fit: contain;
+	align-content: center;
+	margin: auto;
+	display: block;
+	/*border: 5px green solid;*/
+}
+
+.carousel-inner > .carousel-item > a > img {
+	max-width: 450px;
+	max-height: 450px;
+	/*object-fit: contain;*/
+	/*align-content: center;*/
+	margin: auto;
+	padding: 5px 5px;
+	display: block;
+	/*border: 5px pink solid;*/
+}
+/*
+.carousel-item > a > img:hover {
+	transition: all 0.5s linear;
+	opacity: 0.3;
+}
+*/
+.carousel-caption {
+	max-width: 450px;
+	max-height: 450px;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+	/*border: 10px solid red;*/
+	text-align: center;
+	margin: auto;
+}
+
+/*This line below has to be changed to limit caption show up*/
+/*original line: .carousel-item:hover .carousel-caption {*/
+
+.carousel-item:hover .carousel-caption {
+	background: silver;
+	background-color: rgba(0, 0, 0, .3);
+	color: white;
+	opacity: 1;
+}
+
+.carousel-caption:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+
+/*NAVBAR LESS TALL*/
+/*Mailchimp signup in navbar?*/
+
+.navbar-nav > li > .dropdown-menu {
+	background: silver;
+	background: rgba(192, 192, 192, .5);
+	border: 0;
+}
+
+.dropdown-item:hover {
+	background: silver;
+	background-color: rgba(192, 192, 192, 0);
+	border: 0;
+	font-style: italic;
+}
+
+.homepagecontainer {
+	height: 100%;
+	font-weight: bolder;
+	margin: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+}
+
+.namelogo {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 3vw;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.namelogo > a:link, .namelogo > a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.namelogo > a:hover {
+	text-decoration: none;
+	color: purple;
+	color: rgb(35, 31, 54);
+}
+
+.enterlink {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.enterlink > a:link, .enterlink > a:hover, .enterlink > a:visited {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 3vw;
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+	margin: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
